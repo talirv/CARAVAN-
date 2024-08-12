@@ -1,5 +1,4 @@
 body {
-
   padding-top: 75px;
 }
 
@@ -25,18 +24,33 @@ box-shadow: 0 2px 4px 0 rgba(0,0,0,.05),
   border-color: currentColor; 
 }
 
+.accordion-button::after {
+  display: none;
+}
+
 
 
 
 @media (max-width: 767px) {
-  #home-quote .display-4{
+  #home-quote .display-4 {
     font-size: 2.5rem;
   }
 
   body {
-    padding: 0px;
-    }
-  }.fixed-top {
+    padding: 0;
+  }
+
+  .fixed-top {
     position: relative;
-  
+  }
+}
+
+body {
+  padding-top: 56px; 
+}
+
+.fixed-top {
+  position: fixed;
+  width: 100%;
+  z-index: 1030;
 }
