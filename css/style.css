@@ -1,0 +1,42 @@
+body {
+
+  padding-top: 75px;
+}
+
+.box-shadow {
+box-shadow: 0 2px 4px 0 rgba(0,0,0,.05),
+            0 4px 8px 0 rgba(0,0,0,.05);
+}
+
+#home-quote {
+  background: url(../img/bg-quote.jpg) center center ;
+  background-size: cover;
+
+}
+
+
+.underline {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease-in-out; 
+}
+
+.underline:hover {
+  border-color: currentColor; 
+}
+
+
+
+
+@media (max-width: 767px) {
+  #home-quote .display-4{
+    font-size: 2.5rem;
+  }
+
+  body {
+    padding: 0px;
+    }
+  }.fixed-top {
+    position: relative;
+  
+}
