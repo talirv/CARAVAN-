@@ -14,6 +14,52 @@
 
 <body>
 
+<div class="modal fade " id="modalLogin" tabindex="-1" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalLoginTitulo">Entre na sua conta</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       
+        <form>
+          <div class="mb-3">
+            <label for="inputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém</div>
+          </div>
+          <div class="mb-3">
+            <label for="loginSenha" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="loginSenha">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="checkManterLogado">
+            <label class="form-check-label" for="checkManterLogado">Salvar Login</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Entrar na conta</button>
+          <div id="helpButton" class="form-text">Esqueceu a Senha? <a href="#">Clique aqui</a></div>
+        </form>
+        
+
+
+
+
+
+
+
+
+
+      </div>
+  
+    </div>
+  </div>
+</div>
+
+
+
+
+
 
   <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 shadow-sm">
     <a href="index.html" class="navbar-brand ms-4">
@@ -43,7 +89,7 @@
           <a class="nav-link" href="contato.html">Contato</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
         </li>
         <li class="nav-item">
           <a class="btn btn-outline-primary h2 ms-md-2" href="inscricao.html">Inscreva-se</a>
